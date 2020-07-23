@@ -1,19 +1,15 @@
 {
     "manifest_version": 2,
-    "name": "Replace strings",
-    "version": "1.0",
-    "description": "It replaces the occurences of 'refugee', 'refugees' to 'human', 'humans'",
-    "content_scripts": [
-        {
-            "matches": [
-                "http://*/*",
-                "https://*/*"
-            ],
-            "js": [
-                "content.js"
-            ],
-            "run_at": "document_end",
-            "all_frames": true
-        }
-    ]
+    "name": "Timestamp 2 datetimes",
+    "version": "0.1",
+    "description": "It replaces tags containing timestamps with readable dates and times",
+    "background": {
+        "scripts": ["bg.js"]    
+    },
+
+    "permissions": [
+        "activeTab"
+    ],
+    "browser_action":{},
+    "icons": {"128": "icon.png"}
 }
