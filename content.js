@@ -26,9 +26,9 @@ chrome.runtime.onMessage.addListener( (message, sender, sendResponse) => { /* Co
                 var text = node.nodeValue;
                 var replacedText = text.replace(/\d{9,10}/g, (match, $1) => {
                     let d = new Date(match*1000);
-                    let [{ value: month },,{ value: day },,{ value: year },,{value: hour},,{value: minute}] = dateTimeFormat.formatToParts(d ) 
+                    let [{ value: month },,{ value: day },,{ value: year },,{value: hour},,{value: minute}] = dateTimeFormat.formatToParts(d); 
 
-                    return '{0}:{1} {2}-{3}-{4}'.format(hour, minute, day, month, year);;
+                    return '{0}:{1} {2}-{3}-{4}'.format(hour, minute, day, month, year);
 
                 });
                 

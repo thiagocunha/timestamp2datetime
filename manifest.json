@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Timestamp 2 datetimes",
-    "version": "0.1",
+    "version": "0.2",
     "description": "It replaces tags containing timestamps with readable dates and times",
     "background": {
         "scripts": ["bg.js"]    
